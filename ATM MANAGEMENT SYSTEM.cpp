@@ -3,10 +3,10 @@
 #include <iostream>
 #include <stdlib.h>
 #include <string.h>
+
 using namespace std;
 class Bank {
 
-	// Private variables used inside class
 private:
 	string name;
 	long long accnumber;
@@ -14,7 +14,6 @@ private:
 	long long amount = 0;
 	long long tot = 0;
 
-	// Public variables
 public:
 	// Function to set the person's data
 	void setvalue()
@@ -58,6 +57,7 @@ public:
 
 	// Function to withdraw the amount in ATM
 	void withdrawl()
+	
 	{
 		int a, avai_balance;
 		cout << "Enter amount to withdraw\n";
@@ -75,14 +75,13 @@ int main()
 
 	int choice;
 
-	// Infinite while loop to choose
-	// options everytime
 	while (1) {
 		cout << "\n------------------------------------------------------------------------------"
 			<< "-----------------------------------------------------------------------------"
 			<< "---------------------------WELCOME--------------------------------------------"
 			<< "-------------------------------------------------------------------------------"
 			<< "--------------------------------------------------------------------------\n\n";
+		
 		cout << "Enter Your Choice\n";
 		cout << "\t1. Enter name, Account "
 			<< "number, Account type\n";
@@ -91,28 +90,34 @@ int main()
 		cout << "\t4. Show Total balance\n";
 		cout << "\t5. Withdraw Money\n";
 		cout << "\t6. Cancel\n";
+		
 		cin >> choice;
-
-		// Choices to select from
+		
 		switch (choice) {
 		case 1:
 			b.setvalue();
 			break;
+				
 		case 2:
 			b.showdata();
 			break;
+				
 		case 3:
 			b.deposit();
 			break;
+				
 		case 4:
 			b.showbal();
 			break;
+				
 		case 5:
 			b.withdrawl();
 			break;
+				
 		case 6:
 			exit(1);
 			break;
+				
 		default:
 			cout << "\nInvalid choice\n";
 		}
