@@ -1,5 +1,4 @@
-// C++ program to implement the ATM
-// Management System
+// C++ program to implement the ATM Management System
 #include <iostream>
 #include <stdlib.h>
 #include <string.h>
