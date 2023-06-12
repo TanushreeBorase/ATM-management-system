@@ -1,7 +1,7 @@
 // C++ program to implement the ATM Management System
 #include <iostream>
-#include <stdlib.h>
-#include <string.h>
+#include <stdlib.h>  //provides several standard functions including memory management, random number generation, string conversions, 
+#include <string.h> // provides various functions for manipulating strings
 
 using namespace std;
 class Bank {
